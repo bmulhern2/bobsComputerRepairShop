@@ -1,3 +1,11 @@
+/* 
+Title: Assignment 9.2 + Assignment 9.3
+Author: Professor Krasso
+Date: September 4 2020
+Modified By: Brendan Mulhern
+Description: This is Bob's Computer Repair Store!
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms'
