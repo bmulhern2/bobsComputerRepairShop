@@ -50,5 +50,6 @@ export class AppComponent implements OnInit {
     let total = oneTotal + twoTotal + threeTotal + fourTotal + fiveTotal + sixTotal + sevenTotal + parts + labor;
     let out = document.getElementById('out');
     out.innerHTML = total;
+    this.myForm.reset()
   }
 }
