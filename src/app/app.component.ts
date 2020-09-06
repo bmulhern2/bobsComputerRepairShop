@@ -16,6 +16,8 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms'
 })
 export class AppComponent implements OnInit {
   myForm: FormGroup
+  twoCost: any
+  threeCost: any
   constructor(private fb: FormBuilder) { }
   ngOnInit() { 
     this.myForm = this.fb.group({
@@ -31,18 +33,17 @@ export class AppComponent implements OnInit {
     })
   }
   add() {
-    let numbers = JSON.stringify(this.myForm.value)
     let oneCost = 39.99;
-    let twoCost = 99.99;
-    let threeCost = 129.99;
+    this.twoCost = 99.99;
+    this.threeCost = 129.99;
     let fourCost = 49.99;
     let fiveCost = 89.99;
     let sixCost = 45.00;
     let sevenCost = 149.99;
     let { parts, labor } = this.myForm.value;
     let oneTotal = this.myForm.get('one').value * oneCost;
-    let twoTotal = this.myForm.get('two').value * twoCost;
-    let threeTotal = this.myForm.get('three').value * threeCost;
+    let twoTotal = this.myForm.get('two').value * this.twoCost;
+    let threeTotal = this.myForm.get('three').value * this.threeCost;
     let fourTotal = this.myForm.get('four').value * fourCost;
     let fiveTotal = this.myForm.get('five').value * fiveCost;
     let sixTotal = this.myForm.get('six').value * sixCost;

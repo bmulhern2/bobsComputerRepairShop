@@ -7,18 +7,18 @@
     </head>
     <form class="text-center" [formGroup]="myForm" (ngSubmit)="add()">
     <h1>Services</h1>
-    <h2>Password Reset: ($39.99)</h2><input type="number" formControlName="one" />
-    <h2>Spyware Removal: ($99.99) </h2><input type="number" formControlName="two" />
-    <h2>RAM Upgrade ($129.99)</h2><input type="number" formControlName="three" />
-    <h2>Software Installation ($49.99)</h2><input type="number" formControlName="four" />
-    <h2>Tune-up ($89.99)</h2><input type="number" formControlName="five" />
-    <h2>Keyboard Cleaning ($45.00)</h2><input type="number" formControlName="six" />
-    <h2>Disk Clean-up ($149.99)</h2><input type="number" formControlName="seven" />
+    <h2>Password Reset: ($39.99)</h2><input id="one" type="number" formControlName="one" />
+    <h2>Spyware Removal: ($99.99) </h2><input id="two" type="number" formControlName="two" />
+    <h2>RAM Upgrade ($129.99)</h2><input id="three" type="number" formControlName="three" />
+    <h2>Software Installation ($49.99)</h2><input id="four" type="number" formControlName="four" />
+    <h2>Tune-up ($89.99)</h2><input type="number" id="five" formControlName="five" />
+    <h2>Keyboard Cleaning ($45.00)</h2><input id="six" type="number" formControlName="six" />
+    <h2>Disk Clean-up ($149.99)</h2><input id="seven" type="number" formControlName="seven" />
     <br />
     <hr>
     <h1>Standard Fees</h1>
-    <h2>Parts: <input type="number" formControlName="parts" /></h2>
-    <h2>Labor: <input type="number" formControlName="labor"/></h2>
+    <h2>Parts: <input id="parts" type="number" formControlName="parts" /></h2>
+    <h2>Labor: <input id="labor" type="number" formControlName="labor"/></h2>
     <br />
     <div class="text-center" id="out"></div>
     <hr>

@@ -17,23 +17,34 @@ describe('AppComponent', () => {
       ],
     }).compileComponents();
   }));
-
-  it('should create the app', () => {
+  //1
+  it('add function is truthy', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(app.add()).toBeTruthy();
   });
-
-  it(`should have as title 'bobs-computer-repair-shop'`, () => {
+  //2
+  it('ngOnInit works', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('bobs-computer-repair-shop');
+    expect(app.ngOnInit()).toBeTruthy();
   });
-
-  it('should render title', () => {
+  //3
+  it('myForm is defined', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('bobs-computer-repair-shop app is running!');
+    const app = fixture.componentInstance;
+    expect(app.myForm).toBeTruthy();
+  });
+  //4
+  it('three is true', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.threeCost).toBe(129.99);
+  });
+  //5
+  it('five is true', () => {
+   const fixture = TestBed.createComponent(AppComponent);
+   const app = fixture.componentInstance;
+   expect(app.twoCost).toBe(99.99);
   });
 });

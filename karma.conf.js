@@ -17,7 +17,7 @@ module.exports = function (config) {
     },
     coverageIstanbulReporter: {
       dir: require('path').join(__dirname, './coverage/bobs-computer-repair-shop'),
-      reports: ['html', 'lcovonly', 'text-summary'],
+      reports: ['html'],
       fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml'],
